@@ -8,8 +8,7 @@ nav:after {
     clear: both;
   }
 nav {
-    background-color: #333;
-    
+    background-color: #333;    
 }
 .menu {
      float:right;
@@ -89,12 +88,18 @@ footer a{
       .menu a.icon {
         display: block;
       }
-
-      .responsive a.icon {
-        display: none;
+      .menu.responsive {
+          position: relative; 
+        float: none;
       }
-
-     .responsive a{
+    .responsive .icon {
+        display: none;
+        position: absolute;
+        top:0;
+        right:0;
+      }
+     .menu.responsive a{
+         clear:left;
         display:block;
     }
     }
